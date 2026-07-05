@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery - CodeAlpha</title>
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+
+    <h1>📸 My Image Gallery</h1>
+    <p class="subtitle">Click on any image to view larger</p>
+
+    
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=1" alt="Image 1">
+            <div class="overlay">Nature</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
+            <div class="overlay">City</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
+            <div class="overlay">Mountains</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
+            <div class="overlay">Ocean</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
+            <div class="overlay">Forest</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=6" alt="Image 6">
+            <div class="overlay">Sunset</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=7" alt="Image 7">
+            <div class="overlay">Night</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=8" alt="Image 8">
+            <div class="overlay">Flower</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=9" alt="Image 9">
+            <div class="overlay">Waterfall</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=10" alt="Image 10">
+            <div class="overlay">Desert</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=11" alt="Image 11">
+            <div class="overlay">Snow</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/400/300?random=12" alt="Image 12">
+            <div class="overlay">Beach</div>
+        </div>
+
+    </div>
+
+    
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption" id="caption"></div>
+    </div>
+
+    <script src="Galery.js"></script>
+</body>
+</html>
